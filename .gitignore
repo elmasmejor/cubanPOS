@@ -7,3 +7,6 @@ Homestead.json
 public/js
 public/css
 public/build
+/.idea/*
+/node_modules/*
+/docs/*
