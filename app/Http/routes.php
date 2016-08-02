@@ -11,6 +11,8 @@
 |
 */
 
+Route::get('test/category/{id}', 'TestController@get_category');
+
 Route::group(['middleware' => ['web']], function () {
     Route::get('/', 'AngularController@serveApp');
 
@@ -28,6 +30,9 @@ $api->group(['middleware' => ['api']], function ($api) {
     $api->post('auth/password/email', 'Auth\PasswordResetController@sendResetLinkEmail');
     $api->get('auth/password/verify', 'Auth\PasswordResetController@verify');
     $api->post('auth/password/reset', 'Auth\PasswordResetController@reset');
+
+    //Pos Routes
+    $api->post('pos_categories', 'PosCategoriesController@create')
 });
 
 //protected API routes with JWT (must be logged in)

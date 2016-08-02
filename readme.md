@@ -46,4 +46,10 @@ Thank you for contributing to this repository.
 Here are the guidelines:
 
 1. If you are adding/modifying backend functionality, make sure to include the appropriate `test`. Let me know if you need help writing the test.
-    
+
+## LEO
+Watching assets
+`gulp && gulp watch`
+
+View website
+`php artisan serve` and browse to localhost:8000
